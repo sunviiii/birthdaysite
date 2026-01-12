@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Little Game 🤍</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    let count = 0;
+    function clickHeart() {
+      count++;
+      document.getElementById("count").innerText = count;
+      if (count >= 5) {
+        document.getElementById("msg").innerText = "You won 🥰";
+        setTimeout(() => {
+          window.location.href = "final.html";
+        }, 1500);
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>
+
+  <audio autoplay loop>
+    <source src="assets/song.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="lock-box">
+    <h2>Click the heart 5 times 🤍</h2>
+
+    <div style="font-size: 60px; cursor: pointer;" onclick="clickHeart()">❤️</div>
+
+    <p>Clicks: <span id="count">0</span></p>
+    <p id="msg"></p>
+  </div>
+
+  <div class="signature">sun</div>
+
+</body>
+</html><!DOCTYPE html>
+<html>
+<head>
+  <title>Little Game 🤍</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    let count = 0;
+    function clickHeart() {
+      count++;
+      document.getElementById("count").innerText = count;
+      if (count >= 5) {
+        document.getElementById("msg").innerText = "You won 🥰";
+        setTimeout(() => {
+          window.location.href = "final.html";
+        }, 1500);
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <video autoplay muted loop class="bg-video">
+    <source src="assets/bg.mp4" type="video/mp4">
+  </video>
+
+  <audio autoplay loop>
+    <source src="assets/song.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="lock-box">
+    <h2>Click the heart 5 times 🤍</h2>
+
+    <div style="font-size: 60px; cursor: pointer;" onclick="clickHeart()">❤️</div>
+
+    <p>Clicks: <span id="count">0</span></p>
+    <p id="msg"></p>
+  </div>
+
+  <div class="signature">sun</div>
+
+</body>
+</html>
